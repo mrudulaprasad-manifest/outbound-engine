@@ -91,29 +91,63 @@ Scheduling CTA (all steps): `suggested_date` and `suggested_time` are generated 
 
 ### Step-by-step template
 
+Every step's scheduling CTA sits in its own paragraph, on a line break after the main body, so it reads as a distinct ask rather than being buried in the pitch. All merge variables are bolded in the template source so they're easy to spot before a send.
+
 **Step 1 (Day 1) — Subject: Manifest AI + {{company_name}}'s automation gap**
-> Hi {{first_name}}, noticed {{top_signal}}{{#if incumbent_metric}} ({{incumbent_metric}} via {{incumbent_vendor}}){{/if}}.{{#if incumbent_metric}} Genuinely strong number for a brand your size.{{/if}} What that stack usually isn't built for is turning the same kind of AI around to sell: {{industry_usecase}} handled live on {{platform}}, WhatsApp, or Instagram, in a way that closes the cart instead of just closing the ticket. Curious what's stopped {{company_name}} from pushing further into that side of it? Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, noticed **{{top_signal}}**{{#if incumbent_metric}} (**{{incumbent_metric}}** via **{{incumbent_vendor}}**){{/if}}.{{#if incumbent_metric}} Genuinely strong number for a brand your size.{{/if}} What that stack usually isn't built for is turning the same kind of AI around to sell: **{{industry_usecase}}** handled live on **{{platform}}**, WhatsApp, or Instagram, in a way that closes the cart instead of just closing the ticket. Curious what's stopped **{{company_name}}** from pushing further into that side of it?
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 2 (Day 8) — no subject**
-> Hi {{first_name}}, {{#if competitor_benchmark}}did you catch {{competitor_benchmark}}'s agentic commerce work?{{else}}agentic commerce is moving fast across DTC right now.{{/if}} What stood out to us was Manifest AI's layer running alongside brands doing {{traffic}}, without adding headcount. Read more on the agentic commerce capabilities. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, {{#if competitor_benchmark}}did you catch **{{competitor_benchmark}}**'s agentic commerce work?{{else}}agentic commerce is moving fast across DTC right now.{{/if}} What stood out to us was Manifest AI's layer running alongside brands doing **{{traffic}}**, without adding headcount. Read more on the agentic commerce capabilities.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 3 (Day 15) — no subject**
-> Hi {{first_name}}, {{#if exec_hire_name}}saw {{exec_hire_name}} recently joined {{company_name}}, which seemed like a good moment to make sure this reaches everyone thinking about the CX/commerce stack.{{else}}wanted to follow up directly, since this looks like it's squarely in your remit.{{/if}} I'd like to share the thesis we've put together for {{company_name}} specifically: how agentic commerce stacks up against {{#if incumbent_vendor}}what you're running on {{incumbent_vendor}}{{else}}what you're running today{{/if}}. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, {{#if exec_hire_name}}saw **{{exec_hire_name}}** recently joined **{{company_name}}**, which seemed like a good moment to make sure this reaches everyone thinking about the CX/commerce stack.{{else}}wanted to follow up directly, since this looks like it's squarely in your remit.{{/if}} I'd like to share the thesis we've put together for **{{company_name}}** specifically: how agentic commerce stacks up against {{#if incumbent_vendor}}what you're running on **{{incumbent_vendor}}**{{else}}what you're running today{{/if}}.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 4 (Day 22) — no subject**
-> Hi {{first_name}}, {{#if title_hiring}}saw {{company_name}} is hiring for {{title_hiring}}. Worth evaluating candidates on agentic architecture too, not just legacy helpdesk experience.{{else}}wanted to share something that might be useful regardless of where headcount planning stands.{{/if}} Happy to send over the agentic commerce playbook if useful. Download it here. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, {{#if title_hiring}}saw **{{company_name}}** is hiring for **{{title_hiring}}**. Worth evaluating candidates on agentic architecture too, not just legacy helpdesk experience.{{else}}wanted to share something that might be useful regardless of where headcount planning stands.{{/if}} Happy to send over the agentic commerce playbook if useful. Download it here.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 5 (Month 2) — Subject: Quick one for {{company_name}}**
-> Hi {{first_name}}, following up after a quiet stretch.{{#if rloe_connection}} {{rloe_connection}}{{/if}} Since we last spoke, we've had a few more brands in {{industry_usecase}}-heavy categories go live with a similar setup{{#if competitor_benchmark}}, same idea as {{competitor_benchmark}}, just tuned to their catalog instead{{/if}}. Happy to walk through what that actually looks like on {{company_name}}'s traffic if the timing's better now. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, following up after a quiet stretch.{{#if rloe_connection}} **{{rloe_connection}}**{{/if}} Since we last spoke, we've had a few more brands in **{{industry_usecase}}**-heavy categories go live with a similar setup{{#if competitor_benchmark}}, same idea as **{{competitor_benchmark}}**, just tuned to their catalog instead{{/if}}. Happy to walk through what that actually looks like on **{{company_name}}**'s traffic if the timing's better now.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 6 (Month 3) — Subject: The math on {{company_name}}'s side**
-> Hi {{first_name}}, put rough numbers to this for {{company_name}}: {{#if incumbent_metric}}you're already at {{incumbent_metric}} on the support side{{else}}support automation is one part of it{{/if}}, but the commerce side ({{manifest_capability}}) is usually where the AOV and conversion lift shows up, not just deflected tickets. Even a short call would let me size that against {{company_name}}'s actual traffic rather than talking in generalities. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, put rough numbers to this for **{{company_name}}**: {{#if incumbent_metric}}you're already at **{{incumbent_metric}}** on the support side{{else}}support automation is one part of it{{/if}}, but the commerce side (**{{manifest_capability}}**) is usually where the AOV and conversion lift shows up, not just deflected tickets. Even a short call would let me size that against **{{company_name}}**'s actual traffic rather than talking in generalities.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 7 (Month 4) — Subject: Anything changed at {{company_name}}?**
-> Hi {{first_name}}, checking back in. A lot can shift in a quarter: new stack, new priorities, new headcount. If {{#if incumbent_vendor}}{{incumbent_vendor}}{{else}}your current setup{{/if}} is still handling things the same way, the offer to show Manifest AI running against {{company_name}}'s own catalog still stands. If the timing's genuinely just not right, a one-line "not now" is all I need, and I'll stop the check-ins. Does {{suggested_date}} at {{suggested_time}} ET work for a quick catch-up instead? Grab a time here: {{calendly_link}} %signature%
+> Hi **{{first_name}}**, checking back in. A lot can shift in a quarter: new stack, new priorities, new headcount. If {{#if incumbent_vendor}}**{{incumbent_vendor}}**{{else}}your current setup{{/if}} is still handling things the same way, the offer to show Manifest AI running against **{{company_name}}**'s own catalog still stands. If the timing's genuinely just not right, a one-line "not now" is all I need, and I'll stop the check-ins.
+>
+> Does **{{suggested_date}}** at **{{suggested_time}}** ET work for a quick catch-up instead? Grab a time here: **{{calendly_link}}**
+>
+> %signature%
 
 **Step 8 (Month 5) — Subject: Closing the loop, {{first_name}}**
-> Hi {{first_name}}, I'll take the silence as "not now" and stop reaching out on this thread. If {{company_name}}'s priorities shift toward {{manifest_capability}} down the line, the door's open, feel free to reach back whenever that's useful. If it helps, {{suggested_date}} at {{suggested_time}} ET is still open on my calendar: {{calendly_link}}. Wishing you a strong rest of the year. %signature%
+> Hi **{{first_name}}**, I'll take the silence as "not now" and stop reaching out on this thread. If **{{company_name}}**'s priorities shift toward **{{manifest_capability}}** down the line, the door's open, feel free to reach back whenever that's useful.
+>
+> If it helps, **{{suggested_date}}** at **{{suggested_time}}** ET is still open on my calendar: **{{calendly_link}}**.
+>
+> Wishing you a strong rest of the year. %signature%
 
 ## 8. Enrichment tracker CSV — column spec
 
