@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "smartlead": {
+      "type": "sse",
+      "url": "https://mcp.smartlead.ai/sse?user_api_key=${SMARTLEAD_API_KEY}"
+    }
+  }
+}
